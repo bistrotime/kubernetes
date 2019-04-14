@@ -10,9 +10,17 @@ $ gcloud container clusters get-credentials bistrotime
 
 ## Helm
 
+Generate service accounts and cluster role bindings.
+
 ```bash
 $ kubectl apply -f helm.yaml
 $ helm init --service-account tiller --history-max 100
+```
+
+Generate the Kubernetes configuration for CI/CD.
+
+```bash
+$ ./helm.sh
 ```
 
 ## NGINX ingress controller
