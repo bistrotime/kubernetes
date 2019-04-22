@@ -26,7 +26,7 @@ $ ./helm.sh
 ## NGINX ingress controller
 
 ```bash
-$ helm install stable/nginx-ingress --name nginx-ingress --namespace nginx-ingress --set rbac.create=true
+$ helm install stable/nginx-ingress --name nginx-ingress --namespace nginx-ingress --set rbac.create=true --set-string controller.config.server-tokens=false
 ```
 
 ## Cert manager
